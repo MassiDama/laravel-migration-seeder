@@ -24,7 +24,7 @@ class TrainFactory extends Factory
             'arrival_time' => fake() -> dateTimeBetween('+1 week', '+2 week'),
             'train_code' => fake() -> regexify('[A-Z]{5}[0-4]{3}'),
             'carriages' => fake() -> randomNumber(2, true),
-            'on-time' => fake() -> boolean(),
+            'on_time' => fake() -> boolean(),
             'delete' => fake() -> boolean(),
         ];
     }
